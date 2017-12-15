@@ -1,4 +1,4 @@
-package chromablocks.block;
+package org.waterpicker.chromablocks.block;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.event.RegistryEvent;

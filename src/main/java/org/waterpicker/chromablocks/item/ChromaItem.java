@@ -1,10 +1,9 @@
-package chromablocks.item;
+package org.waterpicker.chromablocks.item;
 
-import chromablocks.block.ChromaBlock;
-import chromablocks.block.ModBlocks;
+import org.waterpicker.chromablocks.block.ChromaBlock;
 import net.minecraft.item.ItemBlock;
 
-import static chromablocks.ChromaBlocks.MODID;
+import static org.waterpicker.chromablocks.ChromaBlocks.MODID;
 
 public class ChromaItem extends ItemBlock {
 

@@ -1,7 +1,6 @@
-package chromablocks.item;
+package org.waterpicker.chromablocks.item;
 
-import chromablocks.block.ModBlocks;
-import net.minecraft.block.Block;
+import org.waterpicker.chromablocks.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

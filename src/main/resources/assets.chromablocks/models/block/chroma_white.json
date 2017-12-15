@@ -1,5 +1,5 @@
 {
-  "parent": "chromablocks:blocks/fullbright",
+  "parent": "chromablocks:block/fullbright",
   "textures": {
     "all": "chromablocks:blocks/chroma_white"
   }

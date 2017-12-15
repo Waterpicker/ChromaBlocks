@@ -1,5 +1,5 @@
 {
   "variants": {
-    "normal": { "model": "chromablocks:block/chroma_green" }
+    "normal": { "model": "chromablocks:chroma_green" }
   }
 }

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "chromablocks:block/chroma_light_blue" }
+  }
+}

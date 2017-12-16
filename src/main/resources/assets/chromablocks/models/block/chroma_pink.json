@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:fullbright",
+  "textures": {
+    "all": "chromablocks:blocks/chroma_pink"
+  }
+}

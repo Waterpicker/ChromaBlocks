@@ -14,5 +14,6 @@ public class ChromaBlocksProxyClient extends ChromaBlocksProxyCommon {
     @Override
     public void onInitialization(FMLInitializationEvent event) {
         super.onInitialization(event);
+        //ModelManager.registerModels();
     }
 }

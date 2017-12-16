@@ -1,6 +1,0 @@
-{
-  "parent": "chromablocks:block/fullbright",
-  "textures": {
-    "all": "chromablocks:blocks/chroma_lime"
-  }
-}

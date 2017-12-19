@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import static org.waterpicker.chromablocks.ChromaBlocks.MODID;
 
-@Mod(modid = MODID, name = "ChromaBlocks", version = "1.0-SNAPSHOT")
+@Mod(modid = MODID, name = "ChromaBlocks", version = "1.0")
 public class ChromaBlocks {
     public static final String MODID = "chromablocks";
 

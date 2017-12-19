@@ -48,7 +48,7 @@
       },
       "silver": {
         "textures": {
-          "all": "chromablocks:blocks/chroma_light_gray"
+          "all": "chromablocks:blocks/chroma_silver"
         }
       },
       "cyan": {

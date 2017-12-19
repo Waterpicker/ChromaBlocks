@@ -25,7 +25,6 @@ import static org.waterpicker.chromablocks.ChromaBlocks.MODID;
 
 public class ChromaBlock extends BlockColored {
     public final String ID = "chroma";
-    public static final PropertyEnum<EnumDyeColor> COLOR = PropertyEnum.<EnumDyeColor>create("color", EnumDyeColor.class);
 
     public ChromaBlock() {
         super(Material.IRON);

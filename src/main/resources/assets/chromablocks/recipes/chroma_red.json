@@ -1,0 +1,15 @@
+{
+  "type" : "forge:ore_shapeless",
+  "ingredients" : [
+    {
+      "item" : "#CHROMA"
+    },
+    {
+      "item":"minecraft:dye",
+      "data" : 1 }
+  ],
+  "result" : {
+    "item" : "chroma",
+    "data" : 14
+  }
+}

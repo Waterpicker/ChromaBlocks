@@ -19,6 +19,7 @@ import java.util.Set;
 @GameRegistry.ObjectHolder(ChromaBlocks.MODID)
 public class ModBlocks {
     public static ChromaBlock CHROMA = new ChromaBlock();
+    public static ChromaItem CHROMA_ITEM = new ChromaItem();
 
     @Mod.EventBusSubscriber(modid = ChromaBlocks.MODID)
     public static class RegistrationHandler {
@@ -30,8 +31,7 @@ public class ModBlocks {
 
         @SubscribeEvent
         public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
-            ItemBlock item = new ChromaItem();
-            event.getRegistry().register(item);
+            event.getRegistry().register(CHROMA_ITEM);
         }
     }
 }

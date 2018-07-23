@@ -1,0 +1,10 @@
+{
+  "id": "chromablocks",
+  "name": "Chroma Blocks",
+  "authors": [
+    "Waterpicker"
+  ],
+  "listeners": [
+    "org.waterpicker.chromablocks.ChromaBlocks"
+  ]
+}

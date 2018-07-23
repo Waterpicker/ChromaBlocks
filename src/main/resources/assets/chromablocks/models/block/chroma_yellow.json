@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/fullbright",
+  "textures": {
+    "all": "chromablocks:block/chroma_yellow"
+  }
+}

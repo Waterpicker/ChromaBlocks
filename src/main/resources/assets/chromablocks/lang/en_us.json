@@ -14,5 +14,6 @@
   "block.chromablocks.chroma_red": "Red Chroma Block",
   "block.chromablocks.chroma_light_gray": "Silver Chroma Block",
   "block.chromablocks.chroma_white": "White Chroma Block",
-  "block.chromablocks.chroma_yellow": "Yellow Chroma Block"
+  "block.chromablocks.chroma_yellow": "Yellow Chroma Block",
+  "block.chromablocks.chroma_white_slab": "White Chroma Slab"
 }

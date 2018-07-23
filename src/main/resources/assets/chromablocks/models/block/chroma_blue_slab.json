@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/chroma_slab",
+  "textures": {
+    "all": "chromablocks:block/chroma_blue"
+  }
+}

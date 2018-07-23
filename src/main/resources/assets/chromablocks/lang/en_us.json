@@ -15,5 +15,21 @@
   "block.chromablocks.chroma_light_gray": "Silver Chroma Block",
   "block.chromablocks.chroma_white": "White Chroma Block",
   "block.chromablocks.chroma_yellow": "Yellow Chroma Block",
-  "block.chromablocks.chroma_white_slab": "White Chroma Slab"
+
+  "block.chromablocks.chroma_black_slab": "Black Chroma Slab",
+  "block.chromablocks.chroma_blue_slab": "Blue Chroma Slab",
+  "block.chromablocks.chroma_brown_slab": "Brown Chroma Slab",
+  "block.chromablocks.chroma_cyan_slab": "Cyan Chroma Slab",
+  "block.chromablocks.chroma_gray_slab": "Gray Chroma Slab",
+  "block.chromablocks.chroma_green_slab": "Green Chroma Slab",
+  "block.chromablocks.chroma_light_blue_slab": "Light Blue Chroma Slab",
+  "block.chromablocks.chroma_lime_slab": "Lime Chroma Slab",
+  "block.chromablocks.chroma_magenta_slab": "Magenta Chroma Slab",
+  "block.chromablocks.chroma_orange_slab": "Orange Chroma Slab",
+  "block.chromablocks.chroma_pink_slab": "Pink Chroma Slab",
+  "block.chromablocks.chroma_purple_slab": "Purple Chroma Slab",
+  "block.chromablocks.chroma_red_slab": "Red Chroma Slab",
+  "block.chromablocks.chroma_light_gray_slab": "Silver Chroma Slab",
+  "block.chromablocks.chroma_white_slab": "White Chroma Slab",
+  "block.chromablocks.chroma_yellow_slab": "Yellow Chroma Slab"
 }

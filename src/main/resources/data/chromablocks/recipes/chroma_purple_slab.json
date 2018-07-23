@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "chroma_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chromablocks:chroma_purple"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_purple_slab",
+    "count": 6
+  }
+}

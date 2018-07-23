@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "chromablocks:block/chroma_lime_slab" },
+    "type=top": { "model": "chromablocks:block/chroma_lime_slab", "x": 180 },
+    "type=double": { "model": "chromablocks:block/chroma_lime" }
+  }
+}

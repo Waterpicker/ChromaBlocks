@@ -35,7 +35,7 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
     public static Block CHROMA_GRAY = CHROMA_BLOCK.get();
     public static Block CHROMA_GREEN = CHROMA_BLOCK.get();
     public static Block CHROMA_LIGHT_BLUE = CHROMA_BLOCK.get();
-    public static Block CHROMA_SILVER = CHROMA_BLOCK.get();
+    public static Block CHROMA_LIGHT_GRAY = CHROMA_BLOCK.get();
     public static Block CHROMA_LIME = CHROMA_BLOCK.get();
     public static Block CHROMA_MAGENTA = CHROMA_BLOCK.get();
     public static Block CHROMA_ORANGE = CHROMA_BLOCK.get();
@@ -45,7 +45,22 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
     public static Block CHROMA_WHITE = CHROMA_BLOCK.get();
     public static Block CHROMA_YELLOW = CHROMA_BLOCK.get();
 
+    public static BlockSlab CHROMA_BLACK_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_BLUE_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_BROWN_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_CYAN_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_GRAY_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_GREEN_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_LIGHT_BLUE_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_LIGHT_GRAY_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_LIME_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_MAGENTA_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_ORANGE_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_PINK_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_PURPLE_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_RED_SLAB = CHROMA_SLAB.get();
     public static BlockSlab CHROMA_WHITE_SLAB = CHROMA_SLAB.get();
+    public static BlockSlab CHROMA_YELLOW_SLAB = CHROMA_SLAB.get();
 
     @Override
     public void registerBlocks() {
@@ -56,7 +71,7 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Block.registerBlock("chromablocks:chroma_gray", CHROMA_GRAY);
         Block.registerBlock("chromablocks:chroma_green", CHROMA_GREEN);
         Block.registerBlock("chromablocks:chroma_light_blue", CHROMA_LIGHT_BLUE);
-        Block.registerBlock("chromablocks:chroma_light_gray", CHROMA_SILVER);
+        Block.registerBlock("chromablocks:chroma_light_gray", CHROMA_LIGHT_GRAY);
         Block.registerBlock("chromablocks:chroma_lime", CHROMA_LIME);
         Block.registerBlock("chromablocks:chroma_magenta", CHROMA_MAGENTA);
         Block.registerBlock("chromablocks:chroma_orange", CHROMA_ORANGE);
@@ -66,7 +81,23 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Block.registerBlock("chromablocks:chroma_white", CHROMA_WHITE);
         Block.registerBlock("chromablocks:chroma_yellow", CHROMA_YELLOW);
 
+        Block.registerBlock("chromablocks:chroma_black_slab", CHROMA_BLACK_SLAB);
+        Block.registerBlock("chromablocks:chroma_blue_slab", CHROMA_BLUE_SLAB);
+        Block.registerBlock("chromablocks:chroma_brown_slab", CHROMA_BROWN_SLAB);
+        Block.registerBlock("chromablocks:chroma_cyan_slab", CHROMA_CYAN_SLAB);
+        Block.registerBlock("chromablocks:chroma_gray_slab", CHROMA_GRAY_SLAB);
+        Block.registerBlock("chromablocks:chroma_green_slab", CHROMA_GREEN_SLAB);
+        Block.registerBlock("chromablocks:chroma_light_blue_slab", CHROMA_LIGHT_BLUE_SLAB);
+        Block.registerBlock("chromablocks:chroma_light_gray_slab", CHROMA_LIGHT_GRAY_SLAB);
+        Block.registerBlock("chromablocks:chroma_lime_slab", CHROMA_LIME_SLAB);
+        Block.registerBlock("chromablocks:chroma_magenta_slab", CHROMA_MAGENTA_SLAB);
+        Block.registerBlock("chromablocks:chroma_orange_slab", CHROMA_ORANGE_SLAB);
+        Block.registerBlock("chromablocks:chroma_pink_slab", CHROMA_PINK_SLAB);
+        Block.registerBlock("chromablocks:chroma_purple_slab", CHROMA_PURPLE_SLAB);
+        Block.registerBlock("chromablocks:chroma_red_slab", CHROMA_RED_SLAB);
         Block.registerBlock("chromablocks:chroma_white_slab", CHROMA_WHITE_SLAB);
+        Block.registerBlock("chromablocks:chroma_yellow_slab", CHROMA_YELLOW_SLAB);
+
     }
 
     @Override
@@ -78,7 +109,7 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Item.registerItemBlock(CHROMA_GRAY, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_GREEN, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_LIGHT_BLUE, ItemGroup.BUILDING_BLOCKS);
-        Item.registerItemBlock(CHROMA_SILVER, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIGHT_GRAY, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_LIME, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_MAGENTA, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_ORANGE, ItemGroup.BUILDING_BLOCKS);
@@ -88,6 +119,21 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Item.registerItemBlock(CHROMA_WHITE, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_YELLOW, ItemGroup.BUILDING_BLOCKS);
 
+        Item.registerItemBlock(CHROMA_BLACK_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_BLUE_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_BROWN_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_CYAN_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_GRAY_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_GREEN_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIGHT_BLUE_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIGHT_GRAY_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIME_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_MAGENTA_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_ORANGE_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_PINK_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_PURPLE_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_RED_SLAB, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_WHITE_SLAB, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_YELLOW_SLAB, ItemGroup.BUILDING_BLOCKS);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "group": "chroma_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chromablocks:chroma_black"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_black_slab",
+    "count": 6
+  }
+}

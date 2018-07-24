@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/chroma_stairs",
+  "textures": {
+    "all": "chromablocks:block/chroma_brown"
+  }
+}

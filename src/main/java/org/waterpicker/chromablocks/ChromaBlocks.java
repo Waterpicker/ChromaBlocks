@@ -2,6 +2,7 @@ package org.waterpicker.chromablocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
@@ -10,6 +11,7 @@ import net.minecraft.util.ResourceLocation;
 import org.dimdev.rift.listener.BlockAdder;
 import org.dimdev.rift.listener.ItemAdder;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 
@@ -26,6 +28,17 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         public int getLightValue(IBlockState p_getLightValue_1_) {
             return 15;
         }
+    };
+
+    private static Supplier<BlockStairs> CHROMA_STAIRS = () -> {
+        Block block = CHROMA_BLOCK.get();
+
+        return new BlockStairs(block.getDefaultState(), Block.Builder.create(block)) {
+            @Override
+            public int getLightValue(IBlockState p_getLightValue_1_) {
+                return 15;
+            }
+        };
     };
 
     public static Block CHROMA_BLACK = CHROMA_BLOCK.get();
@@ -61,6 +74,23 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
     public static BlockSlab CHROMA_RED_SLAB = CHROMA_SLAB.get();
     public static BlockSlab CHROMA_WHITE_SLAB = CHROMA_SLAB.get();
     public static BlockSlab CHROMA_YELLOW_SLAB = CHROMA_SLAB.get();
+
+    public static BlockStairs CHROMA_BLACK_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_BLUE_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_BROWN_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_CYAN_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_GRAY_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_GREEN_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_LIGHT_BLUE_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_LIGHT_GRAY_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_LIME_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_MAGENTA_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_ORANGE_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_PINK_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_PURPLE_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_RED_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_WHITE_STAIRS = CHROMA_STAIRS.get();
+    public static BlockStairs CHROMA_YELLOW_STAIRS = CHROMA_STAIRS.get();
 
     @Override
     public void registerBlocks() {
@@ -98,6 +128,22 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Block.registerBlock("chromablocks:chroma_white_slab", CHROMA_WHITE_SLAB);
         Block.registerBlock("chromablocks:chroma_yellow_slab", CHROMA_YELLOW_SLAB);
 
+        Block.registerBlock("chromablocks:chroma_black_stairs", CHROMA_BLACK_STAIRS);
+        Block.registerBlock("chromablocks:chroma_blue_stairs", CHROMA_BLUE_STAIRS);
+        Block.registerBlock("chromablocks:chroma_brown_stairs", CHROMA_BROWN_STAIRS);
+        Block.registerBlock("chromablocks:chroma_cyan_stairs", CHROMA_CYAN_STAIRS);
+        Block.registerBlock("chromablocks:chroma_gray_stairs", CHROMA_GRAY_STAIRS);
+        Block.registerBlock("chromablocks:chroma_green_stairs", CHROMA_GREEN_STAIRS);
+        Block.registerBlock("chromablocks:chroma_light_blue_stairs", CHROMA_LIGHT_BLUE_STAIRS);
+        Block.registerBlock("chromablocks:chroma_light_gray_stairs", CHROMA_LIGHT_GRAY_STAIRS);
+        Block.registerBlock("chromablocks:chroma_lime_stairs", CHROMA_LIME_STAIRS);
+        Block.registerBlock("chromablocks:chroma_magenta_stairs", CHROMA_MAGENTA_STAIRS);
+        Block.registerBlock("chromablocks:chroma_orange_stairs", CHROMA_ORANGE_STAIRS);
+        Block.registerBlock("chromablocks:chroma_pink_stairs", CHROMA_PINK_STAIRS);
+        Block.registerBlock("chromablocks:chroma_purple_stairs", CHROMA_PURPLE_STAIRS);
+        Block.registerBlock("chromablocks:chroma_red_stairs", CHROMA_RED_STAIRS);
+        Block.registerBlock("chromablocks:chroma_white_stairs", CHROMA_WHITE_STAIRS);
+        Block.registerBlock("chromablocks:chroma_yellow_stairs", CHROMA_YELLOW_STAIRS);
     }
 
     @Override
@@ -135,5 +181,22 @@ public class ChromaBlocks implements BlockAdder, ItemAdder {
         Item.registerItemBlock(CHROMA_RED_SLAB, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_WHITE_SLAB, ItemGroup.BUILDING_BLOCKS);
         Item.registerItemBlock(CHROMA_YELLOW_SLAB, ItemGroup.BUILDING_BLOCKS);
+
+        Item.registerItemBlock(CHROMA_BLACK_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_BLUE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_BROWN_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_CYAN_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_GRAY_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_GREEN_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIGHT_BLUE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIGHT_GRAY_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_LIME_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_MAGENTA_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_ORANGE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_PINK_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_PURPLE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_RED_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_WHITE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+        Item.registerItemBlock(CHROMA_YELLOW_STAIRS, ItemGroup.BUILDING_BLOCKS);
     }
 }

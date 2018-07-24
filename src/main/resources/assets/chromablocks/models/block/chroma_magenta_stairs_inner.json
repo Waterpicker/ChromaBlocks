@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/chroma_stairs_inner",
+  "textures": {
+    "all": "chromablocks:block/chroma_magenta"
+  }
+}

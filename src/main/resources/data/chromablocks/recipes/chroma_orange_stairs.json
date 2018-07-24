@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "group": "chroma_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "chromablocks:chroma_orange"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_orange_stairs",
+    "count": 4
+  }
+}

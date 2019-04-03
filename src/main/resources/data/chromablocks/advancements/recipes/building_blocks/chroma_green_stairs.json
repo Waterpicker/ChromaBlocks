@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "chromablocks:chroma_green_stairs"
+    ]
+  },
+  "criteria": {
+    "has_chroma": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "chromablocks:chroma_green"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "chromablocks:chroma_green_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_chroma",
+      "has_the_recipe"
+    ]
+  ]
+}

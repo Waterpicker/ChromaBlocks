@@ -1,28 +1,36 @@
 package org.waterpicker.chromablocks;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.*;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.javafmlmod.FMLModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 import static org.waterpicker.chromablocks.ChromaBlocks.MODID;
 
-@Mod(modid = MODID, name = "ChromaBlocks", version = "1.0")
+@Mod(MODID)
 public class ChromaBlocks {
     public static final String MODID = "chromablocks";
 
-    @SidedProxy(clientSide = "org.waterpicker.chromablocks.client.ChromaBlocksProxyClient",
-            serverSide = "org.waterpicker.chromablocks.server.ChromaBlocksProxyServer")
-    public static ChromaBlocksProxyCommon proxy;
+    public static ItemGroup CHROMA_GROUP = new ItemGroup("chromaBlocks") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(Blocks.CHROMA_WHITE);
+        }
+    };
 
-    @Mod.EventHandler
-    public void onPreInitialization(FMLPreInitializationEvent event) {
-        proxy.onPreInitialization(event);
+
+    public ChromaBlocks() {
+        FMLModLoadingContext.get().getModEventBus().register(new Blocks.Registration());
     }
-
-    @Mod.EventHandler
-    public void onInitialization(FMLInitializationEvent event) {
-        proxy.onInitialization(event);
-    }
-
 }

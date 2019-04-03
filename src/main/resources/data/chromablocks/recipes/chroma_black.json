@@ -1,0 +1,19 @@
+{
+  "type": "crafting_shapeless",
+  "group": "chroma_block",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    }
+  ],
+  "result": {
+    "item": "chromablocks:chroma_black",
+    "count": 8
+  }
+}

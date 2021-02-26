@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "chromablocks:chroma_black_button",
+    "chromablocks:chroma_blue_button",
+    "chromablocks:chroma_brown_button",
+    "chromablocks:chroma_cyan_button",
+    "chromablocks:chroma_gray_button",
+    "chromablocks:chroma_green_button",
+    "chromablocks:chroma_light_blue_button",
+    "chromablocks:chroma_light_gray_button",
+    "chromablocks:chroma_lime_button",
+    "chromablocks:chroma_magenta_button",
+    "chromablocks:chroma_orange_button",
+    "chromablocks:chroma_pink_button",
+    "chromablocks:chroma_purple_button",
+    "chromablocks:chroma_red_button",
+    "chromablocks:chroma_yellow_button",
+    "chromablocks:chroma_white_button"
+  ]
+}

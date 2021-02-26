@@ -1,7 +1,6 @@
 {
+  "_comment": "This file is here to make fabric loader load this on the Knot classloader.",
   "schemaVersion": 1,
-  "id": "chromablocks",
-  "name": "Chroma Blocks",
-  "version": "1.0.0",
-  "authors": ["Waterpicker"]
+  "id": "modid-common",
+  "version": "0.0.1"
 }

@@ -1,7 +1,13 @@
 {
   "variants": {
-    "type=bottom": { "model": "chromablocks:block/chroma_yellow_slab" },
-    "type=top": { "model": "chromablocks:block/chroma_yellow_slab", "x": 180 },
-    "type=double": { "model": "chromablocks:block/chroma_yellow" }
+    "type=bottom": {
+      "model": "chromablocks:block/chroma_yellow_slab"
+    },
+    "type=double": {
+      "model": "chromablocks:block/chroma_yellow"
+    },
+    "type=top": {
+      "model": "chromablocks:block/chroma_yellow_slab_top"
+    }
   }
 }

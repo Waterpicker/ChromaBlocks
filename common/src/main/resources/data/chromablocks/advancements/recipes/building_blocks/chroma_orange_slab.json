@@ -2,16 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "chromablocks:chroma_pink_slab"
+      "chromablocks:chroma_orange_slab"
     ]
   },
   "criteria": {
-    "has_chroma": {
+    "has_chroma_block": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "chromablocks:chroma_pink"
+            "tag": "chromablocks:chroma_blocks"
           }
         ]
       }
@@ -19,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "chromablocks:chroma_pink_slab"
+        "recipe": "chromablocks:chroma_orange_slab"
       }
     }
   },
   "requirements": [
     [
-      "has_chroma",
+      "has_chroma_block",
       "has_the_recipe"
     ]
   ]

@@ -2,18 +2,19 @@
   "schemaVersion": 1,
   "id": "chromablocks",
   "name": "Chroma Blocks",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "authors": ["Waterpicker"],
   "environment": "*",
   "entrypoints": {
     "main": [
       "org.waterpicker.chromablocks.ChromaBlocksFabric"
-    ]
+    ],
+    "preLaunch": ["org.waterpicker.chromablocks.datagen.DatagenInitializer"]
   },
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": ">=1.16.4",
-    "architectury": ">=1.1.55"
-  }
+    "minecraft": ">=1.16.4"
+  },
+  "accessswidener": "chromablocks.accesswidener"
 }

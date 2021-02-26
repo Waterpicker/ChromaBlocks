@@ -1,5 +1,5 @@
 {
-  "parent": "chromablocks:block/fullbright",
+  "parent": "chromablocks:block/template/cube_all",
   "textures": {
     "all": "chromablocks:block/chroma_black"
   }

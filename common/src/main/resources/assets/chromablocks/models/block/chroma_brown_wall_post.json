@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/template/wall_post",
+  "textures": {
+    "wall": "chromablocks:block/chroma_brown"
+  }
+}

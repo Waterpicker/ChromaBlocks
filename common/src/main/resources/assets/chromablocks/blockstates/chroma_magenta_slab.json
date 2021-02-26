@@ -1,7 +1,13 @@
 {
   "variants": {
-    "type=bottom": { "model": "chromablocks:block/chroma_magenta_slab" },
-    "type=top": { "model": "chromablocks:block/chroma_magenta_slab", "x": 180 },
-    "type=double": { "model": "chromablocks:block/chroma_magenta" }
+    "type=bottom": {
+      "model": "chromablocks:block/chroma_magenta_slab"
+    },
+    "type=double": {
+      "model": "chromablocks:block/chroma_magenta"
+    },
+    "type=top": {
+      "model": "chromablocks:block/chroma_magenta_slab_top"
+    }
   }
 }

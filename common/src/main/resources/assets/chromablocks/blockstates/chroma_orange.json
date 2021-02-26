@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "chromablocks:block/chroma_orange" }
+    "": {
+      "model": "chromablocks:block/chroma_orange"
+    }
   }
 }

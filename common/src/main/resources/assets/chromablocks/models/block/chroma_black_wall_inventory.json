@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/template/wall_inventory",
+  "textures": {
+    "wall": "chromablocks:block/chroma_black"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/template/trapdoor_bottom",
+  "textures": {
+    "texture": "chromablocks:block/chroma_lime"
+  }
+}

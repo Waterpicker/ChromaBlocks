@@ -1,0 +1,6 @@
+{
+  "parent": "chromablocks:block/template/wall_side",
+  "textures": {
+    "wall": "chromablocks:block/chroma_gray"
+  }
+}

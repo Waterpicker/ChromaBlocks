@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "chromablocks:chroma_black",
+    "chromablocks:chroma_blue",
+    "chromablocks:chroma_brown",
+    "chromablocks:chroma_cyan",
+    "chromablocks:chroma_gray",
+    "chromablocks:chroma_green",
+    "chromablocks:chroma_light_blue",
+    "chromablocks:chroma_light_gray",
+    "chromablocks:chroma_lime",
+    "chromablocks:chroma_magenta",
+    "chromablocks:chroma_orange",
+    "chromablocks:chroma_pink",
+    "chromablocks:chroma_purple",
+    "chromablocks:chroma_red",
+    "chromablocks:chroma_yellow",
+    "chromablocks:chroma_white"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "chromablocks:chroma_black_slab",
+    "chromablocks:chroma_blue_slab",
+    "chromablocks:chroma_brown_slab",
+    "chromablocks:chroma_cyan_slab",
+    "chromablocks:chroma_gray_slab",
+    "chromablocks:chroma_green_slab",
+    "chromablocks:chroma_light_blue_slab",
+    "chromablocks:chroma_light_gray_slab",
+    "chromablocks:chroma_lime_slab",
+    "chromablocks:chroma_magenta_slab",
+    "chromablocks:chroma_orange_slab",
+    "chromablocks:chroma_pink_slab",
+    "chromablocks:chroma_purple_slab",
+    "chromablocks:chroma_red_slab",
+    "chromablocks:chroma_yellow_slab",
+    "chromablocks:chroma_white_slab"
+  ]
+}

@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.MaterialColor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
@@ -31,8 +32,8 @@ public class UtilImpl {
 		itemDeferredRegister.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
-	public static AbstractBlock.Settings chromaProperties() {
-		return AbstractBlock.Settings.of(Material.METAL).strength(5.0F, 6.0F).luminance(value -> 15).harvestTool(ToolType.PICKAXE).harvestLevel(1);
+	public static AbstractBlock.Settings chromaProperties(MaterialColor color) {
+		return AbstractBlock.Settings.of(Material.METAL, color).strength(5.0F, 6.0F).luminance(value -> 15).harvestTool(ToolType.PICKAXE).harvestLevel(1);
 	}
 
 	public static Tag.Identified<Item> createTag() {

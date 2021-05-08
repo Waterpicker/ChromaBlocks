@@ -1,7 +1,5 @@
 package org.waterpicker.chromablocks;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -23,23 +21,23 @@ import net.minecraft.util.registry.Registry;
 public class ChromaBlocks {
     public static final String MOD_ID = "chromablocks";
 
-	private static Supplier<Block> CHROMA_BLOCK = () -> new Block(Util.chromaProperties());
+	private static Function<MaterialColor, Supplier<Block>> CHROMA_BLOCK = color -> () -> new Block(Util.chromaProperties(color));
 
-    private static Supplier<Block> CHROMA_SLAB = () -> new SlabBlock(Util.chromaProperties());
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_SLAB = color -> () -> new SlabBlock(Util.chromaProperties(color));
 
-    private static Supplier<Block> CHROMA_STAIRS = () -> {
-        Block block = CHROMA_BLOCK.get();
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_STAIRS = color -> () -> {
+        Block block = CHROMA_BLOCK.apply(color).get();
 
         return new StairsBlock(block.getDefaultState(), AbstractBlock.Settings.copy(block)) {};
     };
 
-    private static Supplier<Block> CHROMA_WALL = () -> new WallBlock(Util.chromaProperties());
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_WALL = color -> () -> new WallBlock(Util.chromaProperties(color));
 
-    private static Supplier<Block> CHROMA_DOOR = () -> new DoorBlock(Util.chromaProperties());
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_DOOR = color -> () -> new DoorBlock(Util.chromaProperties(color));
 
-    private static Supplier<Block> CHROMA_TRAP_DOOR = () -> new TrapDoorBlock(Util.chromaProperties());
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_TRAP_DOOR = color -> () -> new TrapDoorBlock(Util.chromaProperties(color));
 
-    private static Supplier<Block> CHROMA_BUTTON = () -> new StoneButtonBlock(Util.chromaProperties()) {
+    private static Function<MaterialColor, Supplier<Block>> CHROMA_BUTTON = color -> () -> new StoneButtonBlock(Util.chromaProperties(color)) {
         @Override
         protected SoundEvent getClickSound(boolean bl) {
             return bl ? SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON : SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON;
@@ -66,12 +64,10 @@ public class ChromaBlocks {
         return item;
     };
 
-    public static List<Group> groups = new ArrayList<>();
-
     public static net.minecraft.tag.Tag.Identified<Item> CHROMA_BLOCKS;
 
 
-    public static void register(String name, int color) {
+    public static void register(String name, MaterialColor color) {
         String main = "chroma_" + name;
         String stairs = main + "_stairs";
         String slab = main + "_slab";
@@ -80,16 +76,16 @@ public class ChromaBlocks {
         String trapDoor = main + "_trap_door";
         String button = main + "_button";
 
-        Util.registerItem(main, itemFunction.apply(Util.registerBlock(main, CHROMA_BLOCK)));
-        Util.registerItem(slab, itemFunction.apply(Util.registerBlock(slab, CHROMA_SLAB)));
-        Util.registerItem(stairs, itemFunction.apply(Util.registerBlock(stairs, CHROMA_STAIRS)));
-        Util.registerItem(wall, itemFunction.apply(Util.registerBlock(wall, CHROMA_WALL)));
-        Util.registerItem(door, itemFunction.apply(Util.registerBlock(door, CHROMA_DOOR)));
-        Util.registerItem(trapDoor, itemFunction.apply(Util.registerBlock(trapDoor, CHROMA_TRAP_DOOR)));
-        Util.registerItem(button, itemFunction.apply(Util.registerBlock(button, CHROMA_BUTTON)));
+        Util.registerItem(main, itemFunction.apply(Util.registerBlock(main, CHROMA_BLOCK.apply(color))));
+        Util.registerItem(slab, itemFunction.apply(Util.registerBlock(slab, CHROMA_SLAB.apply(color))));
+        Util.registerItem(stairs, itemFunction.apply(Util.registerBlock(stairs, CHROMA_STAIRS.apply(color))));
+        Util.registerItem(wall, itemFunction.apply(Util.registerBlock(wall, CHROMA_WALL.apply(color))));
+        Util.registerItem(door, itemFunction.apply(Util.registerBlock(door, CHROMA_DOOR.apply(color))));
+        Util.registerItem(trapDoor, itemFunction.apply(Util.registerBlock(trapDoor, CHROMA_TRAP_DOOR.apply(color))));
+        Util.registerItem(button, itemFunction.apply(Util.registerBlock(button, CHROMA_BUTTON.apply(color))));
 
         Util.registerBlockColors(
-                (blockState, blockRenderView, blockPos, i) -> color,
+                (blockState, blockRenderView, blockPos, i) -> color.color,
                 Registry.BLOCK.get(new Identifier(MOD_ID, main)),
                 Registry.BLOCK.get(new Identifier(MOD_ID, stairs)),
                 Registry.BLOCK.get(new Identifier(MOD_ID, slab)),
@@ -99,7 +95,7 @@ public class ChromaBlocks {
                 Registry.BLOCK.get(new Identifier(MOD_ID, button)));
 
         Util.registerItemColors(
-                (stack, i) -> color,
+                (stack, i) -> color.color,
                 Registry.ITEM.get(new Identifier(MOD_ID, main)),
                 Registry.ITEM.get(new Identifier(MOD_ID, stairs)),
                 Registry.ITEM.get(new Identifier(MOD_ID, slab)),
@@ -110,22 +106,22 @@ public class ChromaBlocks {
     }
 
     public static void init() {
-        register("black", MaterialColor.BLACK.color);
-        register("blue", MaterialColor.BLUE.color);
-        register("brown", MaterialColor.BROWN.color);
-        register("cyan", MaterialColor.CYAN.color);
-        register("gray", MaterialColor.GRAY.color);
-        register("green", MaterialColor.GREEN.color);
-        register("light_blue", MaterialColor.LIGHT_BLUE.color);
-        register("light_gray", MaterialColor.LIGHT_GRAY.color);
-        register("lime", MaterialColor.LIME.color);
-        register("magenta", MaterialColor.MAGENTA.color);
-        register("orange", MaterialColor.ORANGE.color);
-        register("pink", MaterialColor.PINK.color);
-        register("purple", MaterialColor.PURPLE.color);
-        register("red", MaterialColor.RED.color);
-        register("yellow", MaterialColor.YELLOW.color);
-        register("white", MaterialColor.WHITE.color);
+        register("black", MaterialColor.BLACK);
+        register("blue", MaterialColor.BLUE);
+        register("brown", MaterialColor.BROWN);
+        register("cyan", MaterialColor.CYAN);
+        register("gray", MaterialColor.GRAY);
+        register("green", MaterialColor.GREEN);
+        register("light_blue", MaterialColor.LIGHT_BLUE);
+        register("light_gray", MaterialColor.LIGHT_GRAY);
+        register("lime", MaterialColor.LIME);
+        register("magenta", MaterialColor.MAGENTA);
+        register("orange", MaterialColor.ORANGE);
+        register("pink", MaterialColor.PINK);
+        register("purple", MaterialColor.PURPLE);
+        register("red", MaterialColor.RED);
+        register("yellow", MaterialColor.YELLOW);
+        register("white", MaterialColor.WHITE);
 
         CHROMA_BLOCKS = Util.createTag();
     }

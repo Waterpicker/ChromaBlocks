@@ -5,6 +5,7 @@ import java.util.function.Supplier;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.MaterialColor;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.item.Item;
@@ -23,8 +24,8 @@ import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import org.waterpicker.chromablocks.ChromaBlocks;
 
 public class UtilImpl {
-	public static AbstractBlock.Settings chromaProperties() {
-		return FabricBlockSettings.of(Material.METAL).strength(5.0F, 6.0F).lightLevel(value -> 15).breakByTool(FabricToolTags.PICKAXES, 1);
+	public static AbstractBlock.Settings chromaProperties(MaterialColor color) {
+		return FabricBlockSettings.of(Material.METAL, color).strength(5.0F, 6.0F).lightLevel(value -> 15).breakByTool(FabricToolTags.PICKAXES, 1);
 	}
 
 	public static Tag.Identified<Item> createTag() {

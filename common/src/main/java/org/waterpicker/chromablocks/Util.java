@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MaterialColor;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.item.Item;
@@ -14,7 +15,7 @@ import me.shedaniel.architectury.annotations.ExpectPlatform;
 
 public class Util {
 	@ExpectPlatform
-	public static AbstractBlock.Settings chromaProperties() {
+	public static AbstractBlock.Settings chromaProperties(MaterialColor color) {
 		throw new AssertionError();
 	}
 

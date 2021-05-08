@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/wall_side",
   "textures": {
-    "wall": "chromablocks:block/chroma_red"
+    "wall": "chromablocks:block/chroma"
   }
 }

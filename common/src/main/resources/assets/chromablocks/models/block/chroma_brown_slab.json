@@ -1,7 +1,7 @@
 {
   "parent": "chromablocks:block/template/slab",
   "textures": {
-    "bottom": "chromablocks:block/chroma_brown",
-    "texture": "chromablocks:block/chroma_brown"
+    "bottom": "chromablocks:block/chroma",
+    "texture": "chromablocks:block/chroma"
   }
 }

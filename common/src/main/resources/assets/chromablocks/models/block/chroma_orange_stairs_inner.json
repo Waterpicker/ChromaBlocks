@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/inner_stairs",
   "textures": {
-    "texture": "chromablocks:block/chroma_orange"
+    "texture": "chromablocks:block/chroma"
   }
 }

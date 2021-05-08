@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/door_top_rh",
   "textures": {
-    "texture": "chromablocks:block/chroma_brown"
+    "texture": "chromablocks:block/chroma"
   }
 }

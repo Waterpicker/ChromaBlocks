@@ -1,7 +1,7 @@
 {
   "parent": "chromablocks:block/template/stairs",
   "textures": {
-    "bottom": "chromablocks:block/chroma_light_blue",
-    "texture": "chromablocks:block/chroma_light_blue"
+    "bottom": "chromablocks:block/chroma",
+    "texture": "chromablocks:block/chroma"
   }
 }

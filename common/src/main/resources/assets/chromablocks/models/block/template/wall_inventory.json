@@ -20,12 +20,12 @@
       "to": [ 12, 16, 12 ],
       "shade": false,
       "faces": {
-        "down":  { "uv": [ 4, 4, 12, 12 ], "texture": "#wall", "cullface": "down" },
-        "up":    { "uv": [ 4, 4, 12, 12 ], "texture": "#wall" },
-        "north": { "uv": [ 4, 0, 12, 16 ], "texture": "#wall" },
-        "south": { "uv": [ 4, 0, 12, 16 ], "texture": "#wall" },
-        "west":  { "uv": [ 4, 0, 12, 16 ], "texture": "#wall" },
-        "east":  { "uv": [ 4, 0, 12, 16 ], "texture": "#wall" }
+        "down":  { "uv": [ 4, 4, 12, 12 ], "tintindex": 0, "texture": "#wall", "cullface": "down" },
+        "up":    { "uv": [ 4, 4, 12, 12 ], "tintindex": 0, "texture": "#wall" },
+        "north": { "uv": [ 4, 0, 12, 16 ], "tintindex": 0, "texture": "#wall" },
+        "south": { "uv": [ 4, 0, 12, 16 ], "tintindex": 0, "texture": "#wall" },
+        "west":  { "uv": [ 4, 0, 12, 16 ], "tintindex": 0, "texture": "#wall" },
+        "east":  { "uv": [ 4, 0, 12, 16 ], "tintindex": 0, "texture": "#wall" }
       },
       "__comment": "Center post"
     },
@@ -33,12 +33,12 @@
       "to": [ 11, 13, 16 ],
       "shade": false,
       "faces": {
-        "down":  { "uv": [ 5, 0, 11, 16 ], "texture": "#wall", "cullface": "down" },
-        "up":    { "uv": [ 5, 0, 11, 16 ], "texture": "#wall" },
-        "north": { "uv": [ 5, 3, 11, 16 ], "texture": "#wall", "cullface": "north" },
-        "south": { "uv": [ 5, 3, 11, 16 ], "texture": "#wall", "cullface": "south" },
-        "west":  { "uv": [ 0, 3, 16, 16 ], "texture": "#wall" },
-        "east":  { "uv": [ 0, 3, 16, 16 ], "texture": "#wall" }
+        "down":  { "uv": [ 5, 0, 11, 16 ], "tintindex": 0, "texture": "#wall", "cullface": "down" },
+        "up":    { "uv": [ 5, 0, 11, 16 ], "tintindex": 0, "texture": "#wall" },
+        "north": { "uv": [ 5, 3, 11, 16 ], "tintindex": 0, "texture": "#wall", "cullface": "north" },
+        "south": { "uv": [ 5, 3, 11, 16 ], "tintindex": 0, "texture": "#wall", "cullface": "south" },
+        "west":  { "uv": [ 0, 3, 16, 16 ], "tintindex": 0, "texture": "#wall" },
+        "east":  { "uv": [ 0, 3, 16, 16 ], "tintindex": 0, "texture": "#wall" }
       },
       "__comment": "Full wall"
     }

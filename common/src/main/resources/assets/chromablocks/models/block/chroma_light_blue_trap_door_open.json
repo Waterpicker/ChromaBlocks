@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/trapdoor_open",
   "textures": {
-    "texture": "chromablocks:block/chroma_light_blue"
+    "texture": "chromablocks:block/chroma"
   }
 }

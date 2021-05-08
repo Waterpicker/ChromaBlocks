@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chromablocks:item/chroma_light_blue_door"
+    "layer0": "chromablocks:item/chroma_door"
   }
 }

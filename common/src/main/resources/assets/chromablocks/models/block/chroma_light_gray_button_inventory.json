@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/button_inventory",
   "textures": {
-    "texture": "chromablocks:block/chroma_light_gray"
+    "texture": "chromablocks:block/chroma"
   }
 }

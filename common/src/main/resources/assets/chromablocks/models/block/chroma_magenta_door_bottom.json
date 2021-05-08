@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/door_bottom",
   "textures": {
-    "texture": "chromablocks:block/chroma_magenta"
+    "texture": "chromablocks:block/chroma"
   }
 }

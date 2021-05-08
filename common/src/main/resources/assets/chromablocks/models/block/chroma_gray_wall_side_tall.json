@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/wall_side_tall",
   "textures": {
-    "wall": "chromablocks:block/chroma_gray"
+    "wall": "chromablocks:block/chroma"
   }
 }

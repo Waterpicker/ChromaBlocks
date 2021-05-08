@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/slab_top",
   "textures": {
-    "texture": "chromablocks:block/chroma_yellow"
+    "texture": "chromablocks:block/chroma"
   }
 }

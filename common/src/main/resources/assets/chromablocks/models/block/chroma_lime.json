@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/cube_all",
   "textures": {
-    "all": "chromablocks:block/chroma_lime"
+    "all": "chromablocks:block/chroma"
   }
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "group": "chroma_slab",
   "pattern": [
-    "XX"
+    "XXX"
   ],
   "key": {
     "X": {
@@ -10,7 +10,7 @@
     }
   },
   "result": {
-    "item": "chromablocks:chroma_blue_button",
-    "count": 4
+    "item": "chromablocks:chroma_blue_slab",
+    "count": 6
   }
 }

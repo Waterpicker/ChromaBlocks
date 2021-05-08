@@ -1,6 +1,6 @@
 {
   "parent": "chromablocks:block/template/button",
   "textures": {
-    "texture": "chromablocks:block/chroma_red"
+    "texture": "chromablocks:block/chroma"
   }
 }

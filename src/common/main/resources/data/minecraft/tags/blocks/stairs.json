@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "chromablocks:chroma_black_stairs",
+    "chromablocks:chroma_blue_stairs",
+    "chromablocks:chroma_brown_stairs",
+    "chromablocks:chroma_cyan_stairs",
+    "chromablocks:chroma_gray_stairs",
+    "chromablocks:chroma_green_stairs",
+    "chromablocks:chroma_light_blue_stairs",
+    "chromablocks:chroma_light_gray_stairs",
+    "chromablocks:chroma_lime_stairs",
+    "chromablocks:chroma_magenta_stairs",
+    "chromablocks:chroma_orange_stairs",
+    "chromablocks:chroma_pink_stairs",
+    "chromablocks:chroma_purple_stairs",
+    "chromablocks:chroma_red_stairs",
+    "chromablocks:chroma_yellow_stairs",
+    "chromablocks:chroma_white_stairs"
+  ]
+}

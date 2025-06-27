@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chroma_trap_door",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "chromablocks:chroma_cyan"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_cyan_trap_door",
+    "count": 4
+  }
+}

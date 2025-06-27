@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chroma_block_dye",
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "chromablocks:chroma_blocks"
+    },
+    "O": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_light_gray",
+    "count": 8
+  }
+}

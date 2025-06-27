@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chroma_door",
+  "pattern": [
+    "XX",
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "chromablocks:chroma_magenta"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_magenta_door"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "chromablocks:chroma_black_trap_door",
+    "chromablocks:chroma_blue_trap_door",
+    "chromablocks:chroma_brown_trap_door",
+    "chromablocks:chroma_cyan_trap_door",
+    "chromablocks:chroma_gray_trap_door",
+    "chromablocks:chroma_green_trap_door",
+    "chromablocks:chroma_light_blue_trap_door",
+    "chromablocks:chroma_light_gray_trap_door",
+    "chromablocks:chroma_lime_trap_door",
+    "chromablocks:chroma_magenta_trap_door",
+    "chromablocks:chroma_orange_trap_door",
+    "chromablocks:chroma_pink_trap_door",
+    "chromablocks:chroma_purple_trap_door",
+    "chromablocks:chroma_red_trap_door",
+    "chromablocks:chroma_yellow_trap_door",
+    "chromablocks:chroma_white_trap_door"
+  ]
+}

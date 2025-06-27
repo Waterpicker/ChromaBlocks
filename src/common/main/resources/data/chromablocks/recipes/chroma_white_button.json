@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chroma_slab",
+  "pattern": [
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "chromablocks:chroma_white"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_white_button",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chroma_wall",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "chromablocks:chroma_yellow"
+    }
+  },
+  "result": {
+    "item": "chromablocks:chroma_yellow_wall",
+    "count": 4
+  }
+}
